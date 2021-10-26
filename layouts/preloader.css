@@ -1,0 +1,210 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: courier, monospace;
+    color: antiquewhite;
+    font-size: 22px;
+    background: black;
+}
+
+
+#preloader
+{
+    width: 100vw;
+    height: 100vh;
+    border: antiquewhite groove  2px ;
+    padding: 10px 0px 0px 10px;
+    
+}
+
+.static_txt
+{
+    margin-bottom: 50px;
+}
+.static_path
+{  
+    position: relative; 
+}
+
+
+.side_by_side
+{
+    display: inline-block;
+}
+
+
+.dynamic_txt span:nth-child(1){color: red;}
+.dynamic_txt span:nth-child(2){color: rgb(1, 194, 1);}
+.dynamic_txt p
+{
+    
+    overflow: hidden;/*Text wont be displayed until the complete animation*/
+    /* cursor */
+    border-right: .25rem solid transparent;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    animation: 
+        typing 2.25s steps(30,end),
+        blink-cursor 1s step-end 4.85;
+        
+}
+
+
+@keyframes typing 
+{
+    from{width: 0%;}
+    to{width: 100%;}    
+}
+
+@keyframes blink-cursor 
+{
+    from,to{border-color: transparent;}
+    50%{border-color: antiquewhite;}    
+}
+
+
+.init
+{
+    
+    color: lightgreen;
+    white-space:nowrap;
+    overflow:hidden;    
+    opacity:0;
+    animation: appear 2s linear;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;/*retain the property after the animation ends*/
+
+}
+
+
+
+@keyframes appear {
+    from{opacity: 0;}
+    1%{opacity: 1;}
+    to{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+
+.loading_bar
+{
+    margin-top: 7px;
+    width: 6.3rem;
+    height: 22px;
+    border-right:0.15rem transparent solid;
+    border-left: 0.15rem transparent solid;
+    opacity: 0;
+    animation: appear 2s linear;
+    animation-delay: 5.15s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes appear {
+    from{opacity: 0; border-color: transparent;}
+    1%{opacity: 1; border-color: antiquewhite;}
+    to{opacity: 1;border-color: antiquewhite;}
+    100%{opacity: 1;border-color: antiquewhite;}
+}
+.loading_bar .progress
+{
+    
+    background-color: lightgreen;
+    width: 0;
+    height: 22px;
+    animation:progress 3s linear;
+    animation-delay: 5.15s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes progress {
+    
+    0%{width: 0;}
+    10%{width: 10%;}
+    30%{width:30%;}
+    45%{width: 45%;}
+    75%{width:75%;}
+    90%{width: 90%;}
+    99%{width: 99%;}
+    100%{width: 100%;}
+}
+
+
+.dynamic_txt2 p
+{
+    
+    overflow: hidden;/*Text wont be displayed until the complete animation*/
+    /* cursor */
+    border-right: .25rem solid transparent;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    animation: 
+        typing2 2.25s steps(30,end),
+        blink-cursor2 1s step-end 4.85;
+    animation-delay: 10.5s;
+}
+
+
+@keyframes typing2
+{
+    from{width: 0%;}
+    to{width: 100%;}    
+}
+
+@keyframes blink-cursor2 
+{
+    from,to{border-color: transparent;}
+    50%{border-color: antiquewhite;}    
+}
+
+
+
+.dynamic_txt1 p
+{
+    
+    overflow: hidden;/*Text wont be displayed until the complete animation*/
+    /* cursor */
+    border-right: .25rem solid transparent;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    animation: 
+        typing 2.25s steps(30,end),
+        blink-cursor 1s step-end 4.85;
+    animation-delay: 8.20s;
+}
+
+
+@keyframes typing
+{
+    from{width: 0%;}
+    to{width: 100%;}    
+}
+
+@keyframes blink-cursor
+{
+    from,to{border-color: transparent;}
+    50%{border-color: antiquewhite;}    
+}
+
+
+.path1
+{
+    
+    white-space:nowrap;
+    overflow:hidden;    
+    opacity:0;
+    animation: appear 2s linear;
+    animation-delay: 8.19s;
+    animation-fill-mode: forwards;/*retain the property after the animation ends*/
+
+}
+
+
+
+@keyframes appear {
+    from{opacity: 0;}
+    1%{opacity: 1;}
+    to{opacity: 1;}
+    100%{opacity: 1;}
+}
