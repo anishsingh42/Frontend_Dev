@@ -7,7 +7,47 @@
 
 .container
 {
-     width: 100vw;
-     height: 100vh;
-     display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.info
+{
+    border: 2px solid turquoise;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}   
+.flex-box-container-2
+{
+    width: 23.23%;
+    position: absolute;
+    top: 55%;
+    border: 2px solid turquoise;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.flex-box-container-2 div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid turquoise;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.flex-box-container-2 div img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
