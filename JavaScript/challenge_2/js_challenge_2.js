@@ -12,11 +12,11 @@ function generateCats()
     //append the image in the div that was fetched 
     if(div)
     {
-        document.getElementById('flex-box-cat-generator').remove();
+        div.appendChild(image);
     }
     else
     {
-        div.appendChild(image);
+        document.getElementById('flex-box-cat-generator').remove();
     }
     
 }
