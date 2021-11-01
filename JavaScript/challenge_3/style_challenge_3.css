@@ -1,0 +1,37 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main
+x   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+.info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid aquamarine;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.flex-box-container-3
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid aquamarine;
+}
+
