@@ -4,6 +4,7 @@
 console.log("Hello World!!!");
 
 //using alert box
+//alert box pops up everytime you reload the page by default although you can change it
 // alert("Hello World from alert box");
 
 
