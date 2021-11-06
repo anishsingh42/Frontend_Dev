@@ -51,7 +51,7 @@ main
 .flex-box-container-3 img
 {
     box-shadow: 0 10px 20px rgba(0,0,0,0.7);
-    border-radius: 10px;
+    border-radius: 40px;
 }
 .flex-box-container-3 img:hover
 {
