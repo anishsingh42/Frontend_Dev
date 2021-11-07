@@ -1,0 +1,80 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    border:5px solid teal;
+    border-radius: 10px;
+}
+.info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid turquoise;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 40px;
+    
+}
+.flex-box-container-4
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid turquoise;
+    margin: 10px;
+    padding: 20px;
+}
+.flex-box-container-4 button
+{
+    padding: 10px;
+    text-decoration: none;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+.flex-box-container-4 .one
+{
+    border: 2px solid coral;
+    background-color: coral;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgb(0, 10, 10);
+}
+.flex-box-container-4 .two
+{
+    border: 2px solid greenyellow;
+    background-color: greenyellow;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgb(0, 10, 10);
+}
+.flex-box-container-4 .three
+{
+    border: 2px solid skyblue;
+    background-color: skyblue;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgb(0, 10, 10);
+}
+.flex-box-container-4 select
+{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: wheat;
+    font-family: monospace;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 1px 1px 3px rgba(0,10,10);
+}
