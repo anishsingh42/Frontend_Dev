@@ -8,10 +8,65 @@ console.log("Hello World!!!");
 // alert("Hello World from alert box");
 
 
+//using confirm box
+//let result  = confirm("Do you still want to delete this??");//boolean value
 
-//variables
+//using prompt box
+// let age  = prompt("What is your age"); // will return null or undefined //null is pointing towards nothing whereas undefined is a un-initialized value
+/*
+    Difference between var and let and const 
+    
+    1. const once defined and declared can't be redefined .
+        Eg : const PI = 3.14;
+             PI = 22/7; //This will throw an error
+    2. Var adn let are very much similar in terms of variable declaration and definition but yet different in multiple ways 
+    
+        a. If using Var there is no concept of global and local variable 
+            var age = 20;
+
+            eg: if(age == 20)
+            {
+                var iwant = "gamingsetup";
+            }
+
+            //compiler interpretation 
+            var age = 20;
+             
+            var iwant;
+            console.log(iwant); //--> output will be undefined
+            
+            if(age == 20)
+            {
+                iwant="gamingsetup";
+            }
+        
+        For keyword var everything is in function scope.
+        
+        If we want the concept of global and local variable we use keyword let. For keyword let it defines block scope as well.
+        block scope means it is  in function scope as well 
+
+        Eg: 
+            function myfun()
+            {
+                var a=20;
+            }
+
+            myfun();
+            console.log(a); //error can't access a beyond function scope 
+
+            //But the above case will run perfectly with let and const.
+
+*/
+
+//variables and data types
 var string_str = "Favorite Number : ";
 var number_no = 42;
+let _bool = false;
+let _array = [1,2,3,4,5,6,7,8,9];
+let _undefined = undefined;
+let _null = null;
+let _NaN = NaN;
+
 console.log(string_str);
 console.log(number_no);
 
@@ -64,6 +119,26 @@ f1();
 
 
 /* 
+    1. The keyword return is to return any datatype 
+    2. Anything after return keyword will not work 
+    3. Eg:
+        function myfun(str1 , str2)
+        {
+            return "Sup";
+
+            console.log(str1); //wont run
+            console.log(str2); // wont run
+        }
+
+        let result  = myfun("abc","def");
+
+        //output 
+            100
+
+    4. By default if programmer is not returning anything javascript will return undefined value.
+*/
+
+/* 
     Q) Take a function that takes you name and print a msg using ur name
 */
 
@@ -79,7 +154,6 @@ nameInput();
 
 /* 
     Add two numbers using function and has parameters num1 and num2
-
 */
 
 function add(num1,num2)
@@ -101,6 +175,22 @@ var array = [1,2,3,4,5,6];
 let random; //undefined
 let nothing = null; //null value
 
+var string_str = "Favorite Number : ";//string
+var number_no = 42;//Number
+let _bool = false;//bool
+let _array = [1,2,3,4,5,6,7,8,9];
+let _undefined = undefined;//undefined
+let _null = null;//NULL
+let _NaN = NaN;//NaN
+ let object = 
+ {
+     "key name":"value",
+     keyname:"value"
+ }
+
+ //accessing objects
+ //1. object.keyname same as object["keyname"] ---> only for keyname's without spaces
+ //2. obeject["keyname"];
 
 //Strings in JS and common methods
 let str_string = 'javascript'
@@ -196,6 +286,15 @@ console.log("Student Name After changing First: ",student.First,student.Second);
 student.Age++;
 console.log("Age Incremented ",student.Age);
 console.log("Student Name using function: ",student.studentInfo());
+
+//suppose one wants to delete Age in student
+delete student.Age;
+console.log(student);
+
+/* object with const ... eg const student will not throw error if we perform student.Age = "55";
+Because JS doesnt protects from changing key:value pair in objects 
+Although it will throw an error if we try to change student .... eg student = "person" is invalid and will give error
+*/
 
 
 //conditional statements --- if else
