@@ -177,11 +177,11 @@ let nothing = null; //null value
 
 var string_str = "Favorite Number : ";//string
 var number_no = 42;//Number
-let _bool = false;//bool
-let _array = [1,2,3,4,5,6,7,8,9];
-let _undefined = undefined;//undefined
-let _null = null;//NULL
-let _NaN = NaN;//NaN
+let _bool_ = false;//bool
+let _array_ = [1,2,3,4,5,6,7,8,9];
+let _undefined_ = undefined;//undefined
+let _null_ = null;//NULL
+let _NaN_ = NaN;//NaN
  let object = 
  {
      "key name":"value",
