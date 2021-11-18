@@ -307,4 +307,3 @@ else
     console.log(status)
 }
 
-//switch statements --- same as cpp
