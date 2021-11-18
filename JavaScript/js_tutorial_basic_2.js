@@ -15,7 +15,7 @@ switch(_age_)
 }
 
 //loops are same as in any other languages like C++
-/*two loops: 
+/*Three loops: 
     for(initialize;condition;increment/decrement){//body}
     
     while(condition)
