@@ -1,78 +1,84 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html
-{
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to right,whitesmoke , rgba(255, 146, 146,0.89), whitesmoke);
-}
-.container
-{
-    text-align: center;
-    font-family: 'Comforter Brush', cursive;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-.prevResult
-{
-    width: 250px;
-    height: 30px;
-    word-wrap: break-word;
-    background-color: rgb(60, 60, 60);;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 17px;
-    color: whitesmoke;
-    font-weight: bolder;
-    text-align: right;
-    padding-right:5px;
-}  
-.currresult
-{
-    width: 250px;
-    height: 40px;
-    word-wrap: break-word;
-    background-color: rgb(60, 60, 60);
-    font-family: 'Bebas Neue', cursive;
-    font-size: 27px;
-    color: whitesmoke;
-    font-weight: bolder;
-    text-align: right;
-    padding-right:5px;
-    
+body {
+  background: linear-gradient(to right,rgb(34, 87, 122), rgb(128, 237, 153));
+  color: rgb(254, 255, 223);
+  text-align: center;
+  font-family: "Island Moments", cursive;
 }
-.calc
-{
-    display: inline-block;
-    background-color: antiquewhite;
-    box-shadow:15px 15px 50px rgb(124, 124, 124);
+
+header h1 {
+  font-size: 60px;
+  margin-bottom: 7%;
 }
-.title
-{
-    font-size: 60px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+
+main {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-table
-{
-    margin: auto;
-    table-layout: none;
+
+#container {
+  width: 20rem;
+  margin: auto;
+  background: rgb(254, 255, 223);
+  box-shadow: 3.75px 3.75px 7.75px rgb(29, 86, 110);
+  /* rgb(54, 69, 79) */
+  border-radius:2.25px;
 }
-table tr td button{
-    font-size: 25px;
-    font-family: 'Bebas Neue', cursive;
-    width: 60px;
-    height: 60px;
-    text-decoration: none;
-    border: none;
-    border-radius:2px;
-    background-color:#ffd1dc;
-    color: black;
-    
+
+#previous-output {
+  color: rgb(254, 255, 223);
+  text-align: end;
+  padding-right: 5px;
+  padding-top: 5px;
+  margin: auto;
+  margin-top: 10%;
+  border: none;
+  background-color: rgb(22, 58, 95);
+  height: 2.25rem;
+  width: 20rem;
+  border-radius:2.25px 2.25px 0px 0px;
 }
-table tr td button:hover
-{
-    background-color:#f8ebee;
+
+#current-output {
+  color: rgb(254, 255, 223);
+  text-align: end;
+  padding-right: 5px;
+  padding-top: 5px;
+  margin: auto;
+  border: none;
+  background-color: rgb(22, 58, 95);
+  height: 2.25rem;
+  width: 20rem;
+  border-radius:0px 0px 2.25px 2.25px;
+}
+
+#input-system {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.span-two {
+  grid-column: span 2;
+  /* grid-column-start: 1;
+    grid-column-end: 3;  */
+}
+
+#input-system button {
+  border-style: solid;
+  border-color: rgb(254, 255, 223);
+  border-width: 0.15px;
+  border-radius: 2.25px;
+  background-color: rgb(173, 235, 190);
+  width: 100%;
+  padding: 10px;
+}
+#input-system button:hover {
+  background-color: rgb(143, 217, 168);
+}
+#input-system button:active {
+  background-color: rgb(116, 190, 193);
 }

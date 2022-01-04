@@ -12,65 +12,40 @@
     <!-- font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Estonia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
+    <header>
+        <h1 id="heading">Standard Calculator</h1>
+    </header>
    <main>
-       <div class="container">
+       <div id="container">
+            <div id="previous-output">PREV</div>
+            <div id="current-output">CURR</div>
+            <div id="input-system">
+                <button data-key="AC" class="span-two">AC</button>
+                <button data-key="DEL" class="span-one">DEL</button>
+                <button data-key="divide" class="span-one">&divide;</button>
 
-           <h1 class="title">Standard Calculator</h1>
-
-            <div class="calc">  
+                <button data-key="one" class="span-one">1</button>
+                <button data-key="two" class="span-one">2</button>
+                <button data-key="three" class="span-one">3</button>
+                <button data-key="multiply" class="span-one">&times;</button>
                 
-                <div class="prevResult JSprevResult">123+</div>
-                <div class="currresult JScurrResult">123456789012</div>        
-            
-                <table>
-                    <tr>
-                        <td><button class="JSoperator">(</button></td>
-                        <td><button class="JSoperator">)</button></td>
-                        <td><button class="JSoperator">%</button></td>
-                        <td><button class="JSac">AC</button></td>
-                    </tr>
+                <button data-key="four" class="span-one">4</button>
+                <button data-key="five" class="span-one">5</button>
+                <button data-key="six" class="span-one">6</button>
+                <button data-key="subtract" class="span-one">&minus;</button>
+                
+                <button data-key="seven" class="span-one">7</button>
+                <button data-key="eight" class="span-one">8</button>
+                <button data-key="nine" class="span-one">9</button>
+                <button data-key="add" class="span-one">&plus;</button>
 
-                    <tr>
-                        <td><button class="JSoperator">1/x</button></td>
-                        <td><button class="JSoperator">&#8730;x</button></td>
-                        <td><button class="JSoperator">x<sup>2</sup></button></td>
-                        <td><button class="JSdelete">&#8592;</button></td>
-                    </tr>
-
-                    <tr>
-                        <td><button class="JSnumber">7</button></td>
-                        <td><button class="JSnumber">8</button></td>
-                        <td><button class="JSnumber">9</button></td>
-                        <td><button class="JSoperator">&#xf7;</button></td>
-                    </tr>
-
-                    <tr>
-                        <td><button class="JSnumber">4</button></td>
-                        <td><button class="JSnumber">5</button></td>
-                        <td><button class="JSnumber">6</button></td>
-                        <td><button class="JSoperator">&#xd7;</button></td>
-                    </tr>
-
-                    <tr>
-                        <td><button class="JSnumber">1</button></td>
-                        <td><button class="JSnumber">2</button></td>
-                        <td><button class="JSnumber">3</button></td>
-                        <td><button  class="JSoperator">&#x2212;</button></td>
-                    </tr>
-
-                    <tr>
-                        <td><button class="JSnumber">.</button></td>
-                        <td><button class="JSnumber">0</button></td>
-                        <td><button class="JSnumber">&#x2b;</button></td>
-                        <td><button class="JSequals">=</button></td>
-                    </tr>
-
-                </table>
-
+                <button data-key="DOT" class="span-one">&dot;</button>
+                <button data-key="zero" class="span-one">0</button>
+                <button data-key="equal" class="span-two">&equals;</button>
             </div>
        </div>
    </main>
