@@ -154,7 +154,7 @@ console.log("Student with age 18: ",studentDetail);
             but we don't have to write window every time we access a property in document.
 */
 
-
+/*
 //set Interval and Set Timeout
 //setTimeout manipulates after a particular duration //duration given in millsecs
 let secCounter = 0
@@ -176,7 +176,7 @@ let idInterval=setInterval(()=>
 },2000)
 
 //u can also clear them by using clearTimeout and clearInterval respectively
-
+*/
 
 //Error Handling 
 //js uses try{}catch(){} to handles errors just like python

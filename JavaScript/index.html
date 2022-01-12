@@ -7,16 +7,35 @@
     <title>JavaScript Tutorial</title>
 </head>
 <body>
-
+    <header id="main-header">
+        <div style="width: 99%; background-color: teal; color:darkorange; padding: 40px 0px 40px 10px; font-size: 50px;">
+            This is Header
+        </div>        
+    </header>
     <!-- grabbing elements by id in js -->
     <h3 id="timeout">SetTimeOut is going to change this.</h3>
 
     <h4 id="interval">Setinterval is going to change this after every 2 sec.</h4>
-    <h3 id="h3_txt"></h3>
+    <h3 id="h3_txt" class="empty-text"></h3>
+
+    <h4 id="r_id" class="empty-text"></h4>
+    <h5 id="h5-txt">This is H5-Text 
+        <p style="display: none;">Invisible</p>
+    </h5>
     
-    <h4 id="r_id"></h4>
+    <p class="select-all">First</p>
+    <p class="select-all">Second</p>
+    <p class="select-all">Third</p>
+    <p class="select-all">Fourth</p>
 
 
+    <form action="text" style="border: 1px solid black; padding: 20px 10px 20px 10px; width: 50vw;">
+        Name: 
+        <input type="text">
+        <input type="button" value="Submit Name">
+    </form>
+
+    
     <script>
         let students = 
         [
@@ -37,6 +56,7 @@
     <p id="function_name"></p>
     <script src="js_tutorial_basic_1.js"></script>
     <script src="js_tutorial_basic_2.js"></script>
+    <script src="js_dom_1.js"></script>
     <script src="js_tutorial_advance_1.js"></script>
 </body>
 </html>
