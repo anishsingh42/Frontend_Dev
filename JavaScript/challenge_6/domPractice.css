@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: rgb(250, 187, 81); */
+  font-family: "Island Moments", cursive;
+}
+header {
+  background-color: rgb(255, 123, 84);
+}
+#main-header {
+  color: rgb(51, 93, 45);
+  font-size: 45px;
+  font-weight: bolder;
+  padding: 20px 0px 20px 30px;
+}
+#container {
+  /* centering a div */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  /* styling container */
+  border-radius: 5.5px;
+  box-shadow: 9px 9px 50px 0px rgba(51, 93, 45, 0.45);
+  background-color: whitesmoke;
+  margin: auto;
+  padding: 60px;
+}
+#add-btn {
+  font-family: "Island Moments", cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  color: rgba(51, 93, 45, 1);
+  padding: 1px 10px 1px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(255, 123, 84);
+}
+#add-btn:hover {
+  background-color: rgb(255, 178, 107);
+}
+#add-btn:active {
+  background-color: rgb(255, 123, 84);
+}
+input[type="text"] {
+  font-family: "Moon Dance", cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 10px;
+  text-align: justify;
+  border: none;
+  border-bottom: 2px solid rgba(51, 93, 45, 1);
+  border-radius: 5px;
+  margin-right: 0.35vw;
+  box-sizing: border-box;
+}
+input[type="text"]:focus {
+  outline: none;
+  background-color: rgba(255, 178, 107, 0.15);
+}
+#items-list {
+  font-family: "Moon Dance", cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  list-style-type:disc;
+  padding-left: 10px;
+}

@@ -8,7 +8,8 @@
 </head>
 <body>
     <header id="main-header">
-        <div style="width: 99%; background-color: teal; color:darkorange; padding: 40px 0px 40px 10px; font-size: 50px;">
+        <div class="container-inside-header"></div>
+        <div style="width: 99%; background-color: teal; color:darkorange; padding: 40px 0px 40px 10px; font-size: 50px;" id="before-element">
             This is Header
         </div>        
     </header>
@@ -23,10 +24,10 @@
         <p style="display: none;">Invisible</p>
     </h5>
     
-    <p class="select-all">First</p>
-    <p class="select-all">Second</p>
-    <p class="select-all">Third</p>
-    <p class="select-all">Fourth</p>
+    <p class="select-all" id="first">First</p>
+    <p class="select-all" id="second">Second</p>
+    <p class="select-all" id="third">Third</p>
+    <p class="select-all" id="fourth">Fourth</p>
 
 
     <form action="text" style="border: 1px solid black; padding: 20px 10px 20px 10px; width: 50vw;">
@@ -35,7 +36,20 @@
         <input type="button" value="Submit Name">
     </form>
 
-    
+    <div id="container">
+        <div id="inner-container">
+            <h2 id="innder-h2-text">This is H2</h2>
+            <form action="input" style="border: 1px solid black; padding: 20px 10px 20px 10px; width: 50vw;" id="inner-form">
+                <p>Email ID: </p>
+                <input type="text" value="abcd@mail.com">
+                <input type="button" value="Submit Mail" id="submit-mail" class="submit-mail-class">
+            </form>
+        </div>
+    </div>
+    <div id="output"></div>
+        <div id="box" style="width: 200px; height: 200px;border: 3px solid black; margin: auto;">
+            <div id="innner-box" style="width: 100px;height: 100px; border: 2.5px solid gray;margin: auto; margin-top:50px ;"></div>
+        </div>
     <script>
         let students = 
         [
@@ -57,6 +71,8 @@
     <script src="js_tutorial_basic_1.js"></script>
     <script src="js_tutorial_basic_2.js"></script>
     <script src="js_dom_1.js"></script>
+    <script src="js_dom_2.js"></script>
+    <script src="js_dom_3.js"></script>
     <script src="js_tutorial_advance_1.js"></script>
 </body>
 </html>

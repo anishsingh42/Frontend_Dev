@@ -77,7 +77,7 @@ for(let j=0;j<nthSelectOdd.length;j++)
 
 let nthSelectEven = document.querySelectorAll('.select-all:nth-child(even)');
 console.log(nthSelectEven);
-
+// nthSelectEven[0].style.padding = '20px 0xp 20px 10px';
 for(let k=0;k<nthSelectEven.length;k++)
 {
     nthSelectEven[k].style.padding = '20px 0xp 20px 10px';
