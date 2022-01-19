@@ -1,56 +1,92 @@
-let inputText = document.getElementById("input-items");
-let addBtn = document.getElementById("add-btn");
-let itemList = document.getElementById("items-list")
-//listen for the click event for the button
-addBtn.addEventListener("click", addItems);
+//Selectors
+const todoList = document.querySelector("#todo-list");
+const todoInput = document.querySelector("#todo-input");
+const todoAddButton = document.querySelector("#todo-add-btn");
+//event listeners
+todoAddButton.addEventListener("click" , addTodo);
+todoList.addEventListener("click", deleteAndCheck);
 
-//delete the task
-itemList.addEventListener('click', deleteTask);
+//functions
+function addTodo(event) {
+  //prevent the page from reloading itself
+  event.preventDefault();
+  if (todoInput.value !== "") {
+    // console.log(1);
 
+    //structure we want
+    /*
+    <ul id="todo-list">
+      <div class="todo-div">
+        <li class="li-list">
+          <!--Content-->
+        </li>
+        <button class="checkmark-btn"></button>
+        <button class="delete-btn"></button>
+      </div>
+    </ul>
+*/
 
-function addItems(e) {
-  //fetch the value at the inputText
-  let newItem = inputText.value;
-  // console.log(newItem); //note newItem is a string type
+    //fetch the text in the todoInput
 
-  if (newItem != "") {
-    //add the value to the html in form of list
-    //create a newElement
-    let taskList = document.createElement('li');
-    //styling to the task-list
-    taskList.style.borderBottom = '0.25px solid rgba(51, 93, 45, 1)'
-    taskList.style.borderRadius = '4px';
+    //create a div element
+    const todoDiv = document.createElement("div");
+    todoDiv.classList.add("todo-div");
+    // console.log(todoDiv);
 
-    //create a deletebtn 
-    let deleteBtn = document.createElement('button');
-    deleteBtn.className = "delete-btn";
-    deleteBtn.appendChild(document.createTextNode('x'));
-    console.log(deleteBtn);
+    //create a li element
+    const liList = document.createElement("li");
+    liList.classList.add("li-list");
+    liList.innerText = todoInput.value;
+    todoDiv.appendChild(liList);
 
-    //styling the deleteBtn
-    deleteBtn.style.float = 'right';
-    // deleteBtn.style.position = 'fixed'
-    
-    console.log(taskList);
-    //inside this newly created list add newItem
-    taskList.appendChild(document.createTextNode(newItem));
+    //create a checkmark button
+    const completedTodo = document.createElement("button");
+    completedTodo.classList.add("checkmark-btn");
+    completedTodo.innerHTML = "&check;";
+    todoDiv.appendChild(completedTodo);
+    //create a delete button
+    const deleteBtn = document.createElement("button");
+    deleteBtn.classList.add("delete-btn");
+    deleteBtn.innerHTML = "&#9747;";
+    todoDiv.appendChild(deleteBtn);
 
-    //append it into the taskList
-    taskList.appendChild(deleteBtn);
-    itemList.appendChild(taskList);
+    //append it in the ul or #todo-list
+    todoList.appendChild(todoDiv);
+    //clear the input after the input is taken
+
+    todoInput.value = "";
   }
 }
 
+function deleteAndCheck(event) {
+  //my event is the ul - list
+  const item = event.target;
+  //target specifies where as the event occurred
+  console.log(item.classList);
+  if (item.classList.contains("delete-btn")) {
+    //alternate way of writing item.classList.contains("delete-btn") would be item.classList[0] === "delete-btn"
+    //--> the first indexed in classList is always name of the class
+    // let task = document.querySelector('.todo-div').children;
+    // console.log(task);
+    // item.remove(task);
 
-function deleteTask(e)
-{
-  //we are listening for a event in the itemList therefore anywhere you click it might delete the task 
-  if(e.target.classList.contains('delete-btn'))
-  {
+    //item would be our delete-btn .. here i m trying to access the parent element of the delete-btn which would be the div which it is in.
+    const task = item.parentElement;
+    // console.log(task);
+    task.remove();
+  }
+
+  if (item.classList.contains("checkmark-btn")) {
     // console.log(1);
-    //the li is the childNode to the div which has the id item-list ... that is div is the parent and li being add is the child
-    let liChild = e.target.parentElement;
-    // console.log(liChild);
-    itemList.remove(liChild);
+    //access the entire div
+
+    const checked = item.previousElementSibling;
+
+    // const checked = document.querySelector('.li-list');
+    //this method wont work fine because it will fetch the first element with class li-list and perform checked activity on that ... irrespective of what indexed check button we are clicking on.
+
+    checked.classList.toggle("checked-todo");
+    //toggle checks whether the class checked-tod is present int he selected element or not if yes it will remove the class checked-todo if no it will add the class checked-todo.
+    // console.log(checked);
   }
 }
