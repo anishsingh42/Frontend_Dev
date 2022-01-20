@@ -33,7 +33,7 @@ main {
   margin-top: 4.5rem;
   /* styling container */
   border-radius: 0.5rem;
-  box-shadow: 1rem 1rem 3.5rem rgba(51, 93, 45, 0.5);
+  box-shadow: 0.15rem 0.15rem 2.5rem rgba(51, 93, 45, 0.5);
   padding: 2.5rem;
 }
 input[type="text"]{
