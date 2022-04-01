@@ -1,0 +1,1 @@
+Selection of multiple elements in DOM 
