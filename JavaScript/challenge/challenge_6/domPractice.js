@@ -80,7 +80,7 @@ function deleteAndCheck(event) {
     // console.log(1);
     //access the entire div
 
-    const checked = item.previousElementSibling;
+    const checked = item.parentElement;
 
     // const checked = document.querySelector('.li-list');
     //this method wont work fine because it will fetch the first element with class li-list and perform checked activity on that ... irrespective of what indexed check button we are clicking on.

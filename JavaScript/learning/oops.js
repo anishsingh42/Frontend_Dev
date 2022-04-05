@@ -111,6 +111,8 @@ car.addEngine('powerful')
 console.log("Engine added: \n", car);
 // console.log(Car.horsePowerFunction());
 // console.log("Horsepower: \n",horsepower);
+
+
 //subclasses using inheritance
 
 class Person{

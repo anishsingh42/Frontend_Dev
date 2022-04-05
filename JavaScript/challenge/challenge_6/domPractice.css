@@ -36,17 +36,17 @@ main {
   box-shadow: 0.15rem 0.15rem 2.5rem rgba(51, 93, 45, 0.5);
   padding: 2.5rem;
 }
-input[type="text"]{
+input[type="text"] {
   z-index: 1000 !important;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   font-size: 1.25rem;
-  padding: 0.30rem;
+  padding: 0.3rem;
   text-align: justify;
   outline: none;
   border: none;
-  border-bottom: .115rem solid rgba(51, 93, 45, 1);
-  border-radius: .25rem;
+  border-bottom: 0.115rem solid rgba(51, 93, 45, 1);
+  border-radius: 0.25rem;
   margin-right: 0.35rem;
   box-sizing: border-box;
 }
@@ -58,40 +58,48 @@ button {
   cursor: pointer;
   width: 2rem;
   height: 2.25rem;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: bolder;
   font-size: 1rem;
   text-align: center;
   /* padding:.45rem .65rem; */
   color: rgba(255, 123, 1);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   border: none;
-  background-color: rgba(51, 93, 45, .85);
-  transition:all 0.2s ease;
+  background-color: rgba(51, 93, 45, 0.85);
+  transition: all 0.2s ease;
 }
-button:hover{
+button:hover {
   color: rgba(255, 123, 1);
-  background-image:linear-gradient(45deg,rgba(51, 93, 45, 1),rgba(81, 146, 89,1));
+  background-image: linear-gradient(
+    45deg,
+    rgba(51, 93, 45, 1),
+    rgba(81, 146, 89, 1)
+  );
 }
-button:active{
+button:active {
   color: rgba(51, 93, 45, 1);
-  background-image:linear-gradient(45deg,rgb(255, 123, 1),rgb(255, 178, 107));
+  background-image: linear-gradient(
+    45deg,
+    rgb(255, 123, 1),
+    rgb(255, 178, 107)
+  );
 }
-#todo-list-container{
+#todo-list-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#todo-list{
+#todo-list {
   min-width: 100%;
-  list-style: none;  
+  list-style: none;
 }
-.todo-div{
+.todo-div {
   margin-left: 0.15rem;
   margin-top: 0.5rem;
   font-size: 1rem;
   /* background-color: rgb(208, 228, 245); */
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   font-size: 1.25rem;
   display: flex;
@@ -99,23 +107,24 @@ button:active{
   align-items: center;
 }
 
-.todo-div li{
+.todo-div li {
   flex: 1;
 }
-.delete-btn{
+.delete-btn {
   margin-left: 0.5rem;
   cursor: pointer;
 }
 
-.li-list{
-  padding-left:0.25rem;
+.li-list {
+  
+  padding-left: 0.25rem;
   padding-right: 0.5rem;
-  transition-property:all ;
-  transition-timing-function:ease;
+  transition-property: all;
+  transition-timing-function: ease;
   transition-duration: 0.6s;
 }
 
-.checked-todo{
+.checked-todo li {
   text-decoration: line-through;
   opacity: 0.55;
 }
