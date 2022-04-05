@@ -1,0 +1,1 @@
+Removing and replacing event in DOM

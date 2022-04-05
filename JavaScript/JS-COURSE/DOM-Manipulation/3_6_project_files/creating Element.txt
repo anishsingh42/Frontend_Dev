@@ -1,0 +1,2 @@
+Creating Element of DOM from scratch in VANILLA JS
+s
