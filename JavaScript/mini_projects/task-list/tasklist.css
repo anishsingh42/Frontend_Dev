@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+body {
+  height: 100vh;
+}
+header {
+  background-color: black;
+  color: white;
+  font-size: larger;
+}
+
+.task-list-heading .heading {
+  padding: 1.5rem;
+}
+
+main {
+  color: rgb(55, 55, 55);
+  font-size: large;
+}
+.center-item-horizontal {
+  margin: 0 auto;
+}
+
+.card {
+  margin-top: 2rem;
+  width: 80%;
+  box-shadow: 2px 2px 5px 2px gray;
+}
+.s12 {
+  width: 100%;
+}
+
+.card-title {
+  font-size: 30px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+}
+
+input[type="text"] {
+  font-size: 20px;
+  width: 90%;
+  margin: 0rem 3rem 3rem;
+  padding: 0.75rem 0rem;
+  outline: none;
+  border: none;
+  border-bottom: 0.1em solid gray;
+  transition: all 0.25s ease-in-out;
+}
+label {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  color: rgb(168, 168, 168);
+  transition: 0.25s ease-in-out;
+}
+input[type="text"]:focus {
+  border-bottom: 0.175em solid teal;
+}
+
+input[type="submit"].btn {
+  margin: 0rem 3rem 3rem;
+  padding: 0.5rem 2.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: larger;
+  box-shadow: 1px 1px 2px 1px gray;
+}
+input[type="submit"]#add-task {
+  background-color: green;
+}
+input[type="submit"]#add-task:hover {
+  background-color: rgb(3, 172, 3);
+}
+
+input[type="submit"]#clear-task {
+  background-color: black;
+}
+input[type="submit"]#clear-task:hover {
+  background-color: rgb(30, 30, 30);
+}
+
+hr {
+  width: 90%;
+  margin: 0 3rem;
+}
+
+h5 {
+  font-size: larger;
+}
+#task-title {
+  margin: 0.75rem 3rem;
+}
+
+.collection {
+  margin: 0.75rem 3rem;
+}
+.collection-item {
+  width: 100%;
+  list-style-type: none;
+  border: 1px solid gray;
+  border-radius: 0.25px;
+  box-shadow: 0.025rem 0.025rem 0.17rem;
+  padding: 0.75rem 1.75rem;
+  font-size: larger;
+}
+
+input[type="checkbox"] {
+  margin: 0em 0.75em 0em 0em;
+  cursor: pointer;
+}
+
+.deleted-task{
+  opacity: 0.5;
+  box-shadow: 0.025rem 0.025rem 0.17rem inset;
+  text-decoration: line-through;
+}
