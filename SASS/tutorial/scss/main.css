@@ -1,0 +1,55 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #272727;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-weight: 700;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  max-width: 980px;
+  background-color: #ff652f;
+  margin: 0 auto;
+}
+
+.main p:last-child {
+  font-weight: 500;
+}
+
+.main .main-paragraph, .main .secondary-paragraph {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #272727;
+}
+
+.main .main-paragraph:hover, .main .secondary-paragraph:hover {
+  color: hotpink;
+}
+
+.main .secondary-paragraph:hover {
+  color: turquoise;
+}
+/*# sourceMappingURL=main.css.map */
